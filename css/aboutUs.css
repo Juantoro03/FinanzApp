@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  header .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  main {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .nosotros .contenido .imagen {
+    width: 80%;
+    height: 150px;
+    background-color: #e0e0e0;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .equipo {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+  }
+  
+  .equipo .integrante {
+    width: 40%;
+    height: 150px;
+    background-color: #e0e0e0;
+  }
+  
+  .imagen-destacada .estrella {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 20px auto;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+  
+  .mision-vision {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+  }
+  
+  .mision-vision .mision,
+  .mision-vision .vision {
+    width: 40%;
+    height: 100px;
+    background-color: #f4f4f4;
+  }
+  
+  .objetivos .contenido .objetivo {
+    width: 80%;
+    height: 100px;
+    background-color: #e0e0e0;
+    margin: 20px auto;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  

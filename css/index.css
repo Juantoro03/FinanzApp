@@ -1,0 +1,290 @@
+/* General */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30px;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+nav a {
+  margin-left: 15px;
+  color: #ffffff; 
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 15px; 
+  border-radius: 20px; 
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #6a11cb;
+}
+
+nav a:hover {
+  background-color: #6a11cb;
+  color: #fff;
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Bienvenida */
+.bienvenida {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  padding: 100px 20px;
+}
+
+.bienvenida h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  margin-top: 120px;
+}
+
+.bienvenida p {
+  font-size: 1.2rem;
+}
+
+/* Sección de invitaciones */
+.invitaciones {
+  /* background: linear-gradient(to right, #6a11cb, #2575fc); */
+  color:#7e7e7e;
+  padding: 60px 20px;
+}
+
+.invitaciones h2 {
+  font-size: 25px;
+  margin-bottom: 30px;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+}
+
+.invitaciones .tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tarjeta .icono {
+  font-size: 3rem;
+  color: #6a11cb;
+  margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #6a11cb;
+}
+
+.tarjeta p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.tarjeta:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 100px;
+  height: 100px;
+  background-color: #6a11cb;
+  border-radius: 50%;
+  opacity: 0.2;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover::before {
+  transform: scale(2);
+}
+
+
+/* Categorías */
+.categoria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.categoria {
+  background-color: #6a11cb;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.categoria a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Beneficios */
+.aprender .beneficios {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.beneficios p {
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.section {
+  text-align: center;
+  padding: 40px 20px;
+  height: 300px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.registro {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.registro-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.formulario-registro {
+  flex: 1;
+  max-width: 500px;
+  text-align: center;
+}
+
+.formulario-registro h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.formulario-registro form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-registro input {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.formulario-registro input:focus {
+  border-color: #6a11cb;
+}
+
+.formulario-registro button {
+  padding: 10px;
+  font-size: 1.2rem;
+  background-color: #6a11cb;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario-registro button:hover {
+  background-color: #4e0eaa;
+}
+
+.imagen-registro {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-placeholder {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  background-color: #e0e0e0;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
