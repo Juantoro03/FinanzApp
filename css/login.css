@@ -1,72 +1,126 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #f4f4f4;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  header .regresar {
-    color: #333;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .login-container {
-    text-align: center;
-    padding: 50px 20px;
-  }
-  
-  .login-container .logo {
-    margin-bottom: 20px;
-  }
-  
-  .login-container h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .login-form {
-    max-width: 400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .login-form input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    font-size: 16px;
-  }
-  
-  .login-form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .login-form button:hover {
-    background-color: #555;
-  }
-  
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header {
+  padding: 30px 30px;
+  background-color:transparent;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: left;
+}
+
+header .regresar {
+  color: #6a11cb;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header .regresar:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+/* Login Container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+}
+
+.logo img {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #6a11cb;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6a11cb;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #4e0eaa;
+}
+
+.login-form .registro {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.login-form .registro a {
+  color: #6a11cb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-form .registro a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  /* background-color: #6a11cb; */
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+}

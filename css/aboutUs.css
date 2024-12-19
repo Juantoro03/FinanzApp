@@ -1,94 +1,143 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-  }
-  
-  header nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  header .logo {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  main {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .section {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .nosotros .contenido .imagen {
-    width: 80%;
-    height: 150px;
-    background-color: #e0e0e0;
-    margin: 20px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .equipo {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px auto;
-  }
-  
-  .equipo .integrante {
-    width: 40%;
-    height: 150px;
-    background-color: #e0e0e0;
-  }
-  
-  .imagen-destacada .estrella {
-    width: 100px;
-    height: 100px;
-    background-color: #ccc;
-    margin: 20px auto;
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-  }
-  
-  .mision-vision {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px auto;
-  }
-  
-  .mision-vision .mision,
-  .mision-vision .vision {
-    width: 40%;
-    height: 100px;
-    background-color: #f4f4f4;
-  }
-  
-  .objetivos .contenido .objetivo {
-    width: 80%;
-    height: 100px;
-    background-color: #e0e0e0;
-    margin: 20px auto;
-  }
-  
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30px;
+  background-color: transparent;
+  z-index: 1000;
+  background-color: #6a11cb;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+nav a {
+  margin-left: 15px;
+  color: #ffffff; 
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 15px; 
+  border-radius: 20px; 
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #6a11cb;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  color: #6a11cb;
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+/* Main Sections */
+main {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #6a11cb;
+  margin-bottom: 20px;
+}
+
+.section {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  margin: 20px auto;
+  border-radius: 8px;
+  max-width: 1200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nosotros .contenido p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: center;
+}
+
+.equipo .integrantes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.integrante {
+  width: 45%;
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-destacada .estrella {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #6a11cb;
+  font-size: 1.2rem;
+}
+
+.mision-vision {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.mision, .vision {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mision h3, .vision h3 {
+  color: #6a11cb;
+}
+
+.objetivos ul {
+  list-style-type: disc;
+  margin: 20px auto;
+  padding: 0 40px;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Footer */
+footer {
+  background-color: #6a11cb;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+}
