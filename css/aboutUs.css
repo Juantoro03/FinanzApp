@@ -5,7 +5,6 @@ body {
   background-color: #f8f9fa;
   color: #333;
 }
-
 header {
   display: flex;
   align-items: center;
@@ -18,13 +17,12 @@ header {
   padding: 15px 30px;
   background-color: transparent;
   z-index: 1000;
-  background-color: #6a11cb;
 }
 
 header .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #000000;
 }
 
 nav a {
@@ -36,12 +34,12 @@ nav a {
   border-radius: 20px; 
   transition: all 0.3s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  background-color: #6a11cb;
+  background-color: #000000;
 }
 
 nav a:hover {
-  background-color: #ffffff;
-  color: #6a11cb;
+  background-color: #000000;
+  color: #fff;
 }
 header .logo {
   font-size: 1.5rem;
@@ -57,7 +55,7 @@ main {
 
 h1, h2 {
   text-align: center;
-  color: #6a11cb;
+  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -102,7 +100,7 @@ h1, h2 {
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  color: #6a11cb;
+  color: #000000;
   font-size: 1.2rem;
 }
 
@@ -123,7 +121,7 @@ h1, h2 {
 }
 
 .mision h3, .vision h3 {
-  color: #6a11cb;
+  color: #000000;
 }
 
 .objetivos ul {
@@ -136,7 +134,7 @@ h1, h2 {
 
 /* Footer */
 footer {
-  background-color: #6a11cb;
+  background-color: #2575fc;
   color: #ffffff;
   text-align: center;
   padding: 15px 0;

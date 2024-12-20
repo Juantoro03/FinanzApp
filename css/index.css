@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
+  background-color: #EFEFEF;
   color: #333;
 }
 header {
@@ -23,7 +23,7 @@ header {
 header .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #000000;
 }
 
 nav a {
@@ -35,11 +35,11 @@ nav a {
   border-radius: 20px; 
   transition: all 0.3s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  background-color: #6a11cb;
+  background-color: #000000;
 }
 
 nav a:hover {
-  background-color: #6a11cb;
+  background-color: #2575fc;
   color: #fff;
 }
 header .logo {
@@ -61,29 +61,46 @@ h2 {
 /* Bienvenida */
 .bienvenida {
   background: linear-gradient(to right, #6a11cb, #2575fc);
-  color: #fff;
+  background-image: url(/img/contabilidadfondo.webp);
+  background-size: cover;
+  color: #000000;
   padding: 100px 20px;
 }
 
+#bienvenida{
+  display: flex;
+  justify-content: left;
+  align-items:start;
+  flex-direction: column;
+}
+
 .bienvenida h1 {
-  font-size: 2.5rem;
+  font-size: 50px;
   margin-bottom: 10px;
-  margin-top: 120px;
+  margin-top: 160px;
+  width: 700px;
 }
 
 .bienvenida p {
-  font-size: 1.2rem;
+  font-size: 15px;
+  width: 700px;
+
 }
 
 /* Sección de invitaciones */
 .invitaciones {
   /* background: linear-gradient(to right, #6a11cb, #2575fc); */
-  color:#7e7e7e;
+  background-color: #eaeaea;
+  color:#1380ac;
   padding: 60px 20px;
 }
 
+#invitaciones{
+  height: 350px;
+}
+
 .invitaciones h2 {
-  font-size: 25px;
+  font-size: 40px;
   margin-bottom: 30px;
   /* text-transform: uppercase; */
   letter-spacing: 1px;
@@ -98,7 +115,7 @@ h2 {
 
 .tarjeta {
   background-color: #fff;
-  color: #333;
+  color: #000000;
   text-align: center;
   padding: 20px;
   border-radius: 12px;
@@ -111,14 +128,14 @@ h2 {
 
 .tarjeta .icono {
   font-size: 3rem;
-  color: #6a11cb;
+  color: #2575fc;
   margin-bottom: 15px;
 }
 
 .tarjeta h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #6a11cb;
+  color: #1380ac;
 }
 
 .tarjeta p {
@@ -138,7 +155,7 @@ h2 {
   left: -50px;
   width: 100px;
   height: 100px;
-  background-color: #6a11cb;
+  background-color: #1769f6;
   border-radius: 50%;
   opacity: 0.2;
   transition: transform 0.3s ease;
@@ -154,15 +171,35 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+#categorias{
+  background-color: #eaeaea;
+  height: 200px;
+  padding-top: 90px;
+
+}
+
+#categorias h2{
+  color: #000000;
+  font-size: 45px;
 }
 
 .categoria {
-  background-color: #6a11cb;
+  background-color: #4e4e4e;
   color: #fff;
   padding: 20px;
   border-radius: 8px;
   font-size: 1.2rem;
   text-align: center;
+  height: 60px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 300px;
 }
 
 .categoria a {
@@ -179,12 +216,19 @@ h2 {
   line-height: 1.6;
 }
 
+#por-que-aprender{
+  background-color: #eaeaea;
+  color: #000000;
+  padding: 60px 20px;
+  height: 250px;
+}
+
 .beneficios p {
   margin: 10px 0;
 }
 
 footer {
-  background-color: #333;
+  background-color: #2575fc;
   color: #fff;
   text-align: center;
   padding: 10px;
@@ -194,13 +238,13 @@ footer {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  background-color: #f7f7f7;
 }
 
 .section {
   text-align: center;
   padding: 40px 20px;
-  height: 300px;
+  height: 450px;
 }
 
 h2 {
@@ -210,14 +254,14 @@ h2 {
 
 .registro {
   padding: 40px 20px;
-  background-color: #f9f9f9;
+  background-color: #eaeaea;
 }
 
 .registro-contenido {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 70%;
   margin: 0 auto;
   gap: 20px;
 }
@@ -230,8 +274,8 @@ h2 {
 
 .formulario-registro h2 {
   margin-bottom: 20px;
-  font-size: 2rem;
-  color: #333;
+  font-size: 40px;
+  color: #2575fc;
 }
 
 .formulario-registro form {
@@ -250,22 +294,23 @@ h2 {
 }
 
 .formulario-registro input:focus {
-  border-color: #6a11cb;
+  border-color: #2575fc;
 }
 
 .formulario-registro button {
   padding: 10px;
   font-size: 1.2rem;
-  background-color: #6a11cb;
+  background-color: #1d6cf6;
   color: #fff;
   border: none;
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin: 0 100px;
 }
 
 .formulario-registro button:hover {
-  background-color: #4e0eaa;
+  background-color: #0c5de9;
 }
 
 .imagen-registro {
@@ -280,11 +325,60 @@ h2 {
   max-width: 400px;
   height: 300px;
   background-color: #e0e0e0;
-  color: #555;
+  color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección Categorías */
+#categorias {
+  color: #ffffff; /* Texto blanco */
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#categorias h2 {
+  font-size: 2.5rem;
+  color: #2575fc; /* Azul destacado */
+  margin-bottom: 30px;
+}
+
+.categoria-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.categoria {
+  background-color: #2575fc; /* Azul */
+  color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.categoria:hover {
+  transform: translateY(-5px); /* Efecto hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+.categoria a {
+  color: #ffffff; /* Texto blanco */
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.categoria a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
 }
