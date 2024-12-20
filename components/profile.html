@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perfil del Usuario</title>
   <link rel="stylesheet" href="../css/profile.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
   <header>
@@ -12,7 +13,7 @@
     <nav>
         <a href="/index.html">Inicio</a>
         <a href="./aboutUs.html">Nosotros</a>
-        <a href="/index.html">Cerrar Sesión</a>
+        <a id="logOut">Cerrar Sesión</a>
     </nav>
   </header>
 
@@ -20,12 +21,12 @@
     <!-- Sección Usuario -->
     <section class="usuario">
       <div class="usuario-info">
-        <div class="imagen-usuario">Usuario</div>
+        <div class="imagen-usuario" id="image">Nombre</div>
         <div class="datos-usuario">
           <h2>Datos del Usuario</h2>
-          <p>Nombre: [Nombre del Usuario]</p>
-          <p>Correo: [Correo Electrónico]</p>
-          <p>Estado: Activo</p>
+          <p id="name">Nombre: [Nombre del Usuario]</p>
+          <p id="email">Correo: [Correo Electrónico]</p>
+          <p id="amount">Monto actual: Activo</p>
         </div>
       </div>
       <div class="invitacion">
@@ -39,31 +40,83 @@
     <!-- Categorías -->
     <section class="categorias">
       <h2>Categorías</h2>
-      <div class="categoria-item">
-        <div class="categoria">Ahorro</div>
-        <button>Empezar</button>
+      <div class="container">
+        <div class="categoria-item">
+          <h1>Monto</h1>
+          <p>¡Resumen total de tus finanzas personales para un buen manejo! </p>
+          <h3 id="textAmount">$0.00</h3>
+          <div class="categoria">
+            <input type="number" id="amount"placeholder="0" required>
+          </div>
+          <button id="btnAmount">Guardar</button>
+        </div>
+        <div class="categoria-item">
+          <h1>Ahorro</h1>
+          <p>¡Dinero reservado para metas o emergencias! </p>
+          <h3 id="textSaving">$0</h3>
+          <div class="categoria">
+            <input type="number" id="saving" placeholder="0"required>
+          </div>
+          <button id="btnSaving">Guardar</button>
+        </div>
+        <div class="categoria-item">
+          <h1>Inversiones</h1>
+          <p>¡Monitorea tus fondos en proyectos o mercados! </p>
+          <h3 id="textInvestment">$0</h3>
+          <div class="categoria">
+            <input type="number" id="investment" placeholder="0" required >
+          </div>
+          <button id="btnInvestment">Guardar</button>
+        </div>
+        <div class="categoria-item">
+          <h1>Ingreso</h1>
+          <p>¡Registra el dinero que recibes! </p>
+          <div class="categoria">
+            <input type="text" placeholder="Descripción" id="descriptionIngreso">
+            <input type="number"  placeholder="0" id="valueIngreso">
+          </div>
+          <button id="btnIngreso">Guardar</button>
+        </div>
+        <div class="categoria-item">
+          <h1>Egreso</h1>
+          <p>¡Controla tus gastos y pagos! </p>
+          <div class="categoria">
+            <input type="text" placeholder="Descripción" id="descriptionEgreso">
+            <input type="number" placeholder="0" id="valueEgreso">
+          </div>
+          <button id="btnEgreso">Guardar</button>
+        </div>
+       
+       
+
       </div>
-      <div class="categoria-item">
-        <div class="categoria">Presupuesto</div>
-        <button>Empezar</button>
-      </div>
-      <div class="categoria-item">
-        <div class="categoria">Inversión</div>
-        <button>Empezar</button>
-      </div>
-      <div class="categoria-item">
-        <div class="categoria">Ingresos</div>
-        <button>Empezar</button>
-      </div>
-      <div class="categoria-item">
-        <div class="categoria">Egresos</div>
-        <button>Empezar</button>
-      </div>
+      
     </section>
 
-    <!-- Resumen -->
     <section class="resumen">
-      <h2>Resumen de tus Finanzas</h2>
+      <h2>Resumen de tus Movimientos</h2>
+
+ 
+      <table class="finanzas-tabla">
+          <thead>
+              <tr>
+                  <th>Descripción:</th>
+                  <th>Valor:</th>
+                  <th>Tipo:</th>
+                  <th>Fecha:</th>
+                  <th></th>
+              </tr>
+          </thead>
+
+          <tbody  id="bodyTable">
+
+
+          </tbody>
+
+      </table>
+      <h2>Total: <span id="result"></span></h2>
+
+      <!-- 
       <div class="resumen-item">
         <div class="bloque">Ahorro</div>
         <button>Actualizar</button>
@@ -83,12 +136,14 @@
       <div class="resumen-item">
         <div class="bloque">Egresos</div>
         <button>Actualizar</button>
-      </div>
+      </div> -->
     </section>
   </main>
 
   <footer>
     <p>© 2024 FinanzAPP - Simplifica tus Finanzas</p>
   </footer>
+  <script type="module" src="../js/profile.js"></script>
+  
 </body>
 </html>

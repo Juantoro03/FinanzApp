@@ -1,4 +1,7 @@
 /* General Styles */
+*{
+  box-sizing:border-box ;
+}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -58,6 +61,9 @@ h1, h2 {
   text-align: center;
   color: #6a11cb;
 }
+span{
+  color: #333;
+}
 
 .usuario {
   text-align: center;
@@ -66,7 +72,7 @@ h1, h2 {
   margin: 20px auto;
   max-width: 1200px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px #6b11cb2c;
 }
 
 .usuario-info {
@@ -80,24 +86,26 @@ h1, h2 {
 .imagen-usuario {
   width: 150px;
   height: 150px;
-  background-color: #e0e0e0;
+  background-color: #eee067;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #6a11cb;
-  font-size: 1.5rem;
+  font-size: 60px;
 }
 
 .datos-usuario p {
   margin: 5px 0;
   font-size: 1rem;
+  font-size: 20px;
+   color: #555;
 }
 
 .invitacion, .invitacion-grande {
   margin-top: 20px;
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: #e7e5e5;
   border-radius: 8px;
   font-size: 1rem;
   color: #555;
@@ -109,37 +117,87 @@ h1, h2 {
   max-width: 1200px;
   text-align: center;
 }
-
-.categorias .categoria-item {
+.container{
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+/* Contenedor principal */
+.categoria-item {
+  width: 320px; /* Ancho del contenedor */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(108, 9, 221, 0.329); /* Sombra para profundidad */
+  background-color: #ffffff; /* Fondo blanco */
+  text-align: center; /* Centrar el contenido */
+  font-family: Arial, sans-serif; /* Fuente general */
+  margin: 20px auto; /* Centrar el contenedor */
 }
 
-.categorias .categoria {
-  font-size: 1.2rem;
-  color: #6a11cb;
+/* Título principal */
+.categoria-item h1 {
+  font-size: 26px;
+  color: #5e1f9c; /* Morado */
+  margin-bottom: 15px;
 }
 
-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  background-color: #6a11cb;
-  color: #fff;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+/* Subtítulo (monto) */
+.categoria-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Gris oscuro */
+  margin-bottom: 20px;
+}
+.categoria-item p{
+  font-family: Arial, sans-serif;
+  color: #555;
+}
+/* Contenedor del input */
+.categoria {
+  margin-bottom: 20px; /* Espacio inferior */
 }
 
-button:hover {
-  background-color: #4e0eaa;
+/* Input de texto */
+.categoria input{
+  margin-bottom: 15px;
+  width: 80%; /* Ancho proporcional */
+  padding: 10px; /* Espaciado interno */
+  border: 2px solid #ddd; /* Borde del input */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño del texto */
+  outline: none; /* Eliminar el borde azul al hacer foco */
+  transition: border 0.3s; /* Animación suave en el borde */
+  
 }
+
+.categoria input[type="text"]:focus {
+  border: 2px solid #5e1f9c; /* Cambiar color del borde al hacer foco */
+}
+.categoria input[type="number"]::-webkit-inner-spin-button,
+.categoria input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Ocultar controles adicionales */
+    margin: 0; /* Eliminar márgenes internos */
+}
+
+/* Botón */
+.categoria-item button {
+  background-color: #5e1f9c; /* Fondo morado */
+  color: #ffffff; /* Texto blanco */
+  padding: 12px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño del texto */
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar cursor al pasar por encima */
+  transition: background-color 0.3s; /* Animación suave */
+}
+
+.categoria-item button:hover {
+  background-color: #7a38c7; /* Fondo más claro al pasar el cursor */
+}
+
+
 
 /* Resumen */
 .resumen {
@@ -150,7 +208,7 @@ button:hover {
 
 .resumen-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 20px;
   margin: 10px auto;
@@ -162,6 +220,73 @@ button:hover {
 .bloque {
   font-size: 1.2rem;
   color: #6a11cb;
+}
+
+        /* Estilo de la tabla */
+.finanzas-tabla {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.096);
+  border-radius: 10px;
+  max-height: 120px;
+  padding: 10px;
+  overflow: auto;
+
+
+  
+}
+
+/* Estilo de los encabezados */
+
+.finanzas-tabla th {
+  background-color: #5e1f9c;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+  width: 25%;
+}
+
+/* Estilo de las filas */
+.finanzas-tabla td {
+  padding: 15px;
+  font-size: 16px;
+  color: #333333;
+  border-bottom: 1px solid #e0e0e0;
+  width: 20%;
+}
+.delete{
+  width: 25px;
+  align-content: center;
+ height: 25px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.6s;
+  border-radius: 20%;
+  border: 1px solid red;
+  color: red;
+}
+.delete:hover{
+  background-color: red;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+
+}
+
+
+
+
+
+/* Última fila sin borde */
+.finanzas-tabla tr:last-child td {
+  border-bottom: none;
+  
+}
+
+/* Alternar colores para filas */
+.finanzas-tabla tr:nth-child(even) {
+  background-color: #cecece;
 }
 
 /* Footer */

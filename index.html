@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Aprendizaje</title>
   <link rel="stylesheet" href="css/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+  
 </head>
 
 <body>
@@ -13,11 +15,9 @@
   <section class="background">
     <header>
       <div class="logo">FinanzAPP</div>
-      <nav>
-        <a href="./index.html">Inicio</a>
-        <a href="./components/aboutUs.html">Nosotros</a>
-        <a href="./components/login.html">Iniciar Sesión</a>
-        <a href="./components/profile.html">Perfil</a>
+      <nav id="nav">
+
+        
       </nav>
     </header>
 
@@ -57,11 +57,11 @@
       <div class="formulario-registro">
         <h2>Registro</h2>
         <form>
-          <input type="text" placeholder="Nombre Completo" required>
-          <input type="email" placeholder="Correo Electrónico" required>
-          <input type="password" placeholder="Contraseña" required>
-          <input type="password" placeholder="Confirmar Contraseña" required>
-          <button type="submit">Registrarse</button>
+          <input type="text" id="name" placeholder="Nombre Completo" required>
+          <input type="email" id="email" placeholder="Correo Electrónico" required>
+          <input type="password" id="password" placeholder="Contraseña" required>
+          <input type="password" id="confirmPassword" placeholder="Confirmar Contraseña" required>
+          <button type="button" id="btn">Registrarse</button>
         </form>
       </div>
       <!-- Imagen -->
@@ -96,6 +96,7 @@
   <footer>
     <p>© 2024 Plataforma de Aprendizaje | Todos los derechos reservados.</p>
   </footer>
+  <script type="module" src="./js/signUp.js"></script>
 </body>
 
 </html>
