@@ -1,8 +1,6 @@
 import {getUsers,saveUsers,getUser,getIndex,getToken} from'./localStorage.js'
 import {Movement} from './movement.js'
 
-
-
 function logOut(){
     localStorage.removeItem("token")
     Swal.fire({
