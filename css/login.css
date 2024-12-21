@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
+  background-color: #000000;
   color: #333;
 }
 
@@ -17,20 +17,22 @@ header {
 }
 
 header .regresar {
-  color: #6a11cb;
+  color: #ffffff;
   font-weight: 400;
   text-decoration: none;
   font-size: 1rem;
   padding: 8px 15px;
   border-radius: 20px;
-  border: 2px solid #fff;
-  background-color: white;
+  border: 2px solid #2575fc;
+  background-color: #2575fc;
   transition: background-color 0.3s, color 0.3s;
 }
 
 header .regresar:hover {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #000000;
+  border: 2px solid #ffffff;
+
 }
 
 /* Login Container */
@@ -41,7 +43,7 @@ header .regresar:hover {
   justify-content: center;
   height: 100vh;
   text-align: center;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  /* background: linear-gradient(to right, #6a11cb, #2575fc); */
   color: #fff;
 }
 
@@ -78,13 +80,13 @@ h1 {
 }
 
 .login-form input:focus {
-  border-color: #6a11cb;
+  border-color: #2575fc;
 }
 
 .login-form button {
   width: 100%;
   padding: 12px;
-  background-color: #6a11cb;
+  background-color: #2575fc;
   color: #fff;
   border: none;
   border-radius: 20px;
@@ -94,7 +96,7 @@ h1 {
 }
 
 .login-form button:hover {
-  background-color: #4e0eaa;
+  background-color: #125ddd;
 }
 
 .login-form .registro {
@@ -104,7 +106,7 @@ h1 {
 }
 
 .login-form .registro a {
-  color: #6a11cb;
+  color: #2575fc;
   text-decoration: none;
   font-weight: bold;
 }
