@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .chat-container {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-header {
+    background-color: #2575fc;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+  }
+  
+  .chat-body {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #eef2f7;
+  }
+  
+  .message {
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .message.user {
+    background-color: #2575fc;
+    color: #fff;
+    align-self: flex-end;
+    margin-left: auto;
+    max-width: 70%;
+  }
+  
+  .message.ia {
+    background-color: #333;
+    color: #fff;
+    align-self: flex-start;
+    margin-right: auto;
+    max-width: 70%;
+  }
+  
+  .chat-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .chat-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .send-button {
+    background-color: #2575fc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .send-button:hover {
+    background-color: #0058cc;
+  }
+
+
+  a{
+    margin: 10px 0 10px 10px;
+    text-decoration: none;
+    background-color: #2575fc;
+    color: white;
+    width: 100px;
+    justify-content: center;
+    display: flex;
+    padding: 10px 30px;
+    border-radius: 40px;
+    transition: background-color 0.3s;
+
+  }
+
+
+  a:hover{
+    background-color: #0058cc;
+  }
+  

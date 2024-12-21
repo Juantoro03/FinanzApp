@@ -294,3 +294,15 @@ document.addEventListener("click", (event) => {
     }
     
 });
+
+
+
+
+  document.getElementById('scroll-to-amount').addEventListener('click', function(event) {
+    event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+    const targetSection = document.getElementById('amountSection'); // Obtén la sección destino
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Scroll suave
+    }
+  });
+
