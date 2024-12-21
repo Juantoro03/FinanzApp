@@ -8,7 +8,7 @@ function loadNav(){
     if(token==="no hay token"){
         nav.innerHTML=`<a href="../index.html">Inicio</a>
         <a href="./components/aboutUs.html">Nosotros</a>
-        <a href="./components/login.html">Iniciar Sesión</a>
+        <a href="../components/login.html">Iniciar Sesión</a>
         `
     }else{
         nav.innerHTML=`<a href="../index.html">Inicio</a>
