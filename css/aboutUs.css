@@ -16,9 +16,10 @@ header {
   width: 100%;
   padding: 15px 30px;
   background-color: rgba(196, 196, 196, 0.452);
-  z-index: 1000;
+  z-index: 1000;}
+.IMG img{
+  border-radius: 50%;
 }
-
 header .logo {
   font-size: 1.8rem;
   font-weight: bold;
