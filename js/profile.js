@@ -31,13 +31,14 @@ function logOut(){
     if(totalMovements ==undefined){
         totalMovements=0
     }
-    if(totalMovements<0){
-        total=totalAmount+totalMovements
-
-    }else{
-        total=totalAmount-totalMovements
-
+    total=totalAmount+totalMovements
+    if(total<0){
+        total=total
+        
     }
+
+
+    
     
     
 
