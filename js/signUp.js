@@ -23,6 +23,7 @@ window.onload=loadNav();
 
 
 let bnt=document.getElementById("btn")
+
 export function signUp(){
     let users=getUsers()//aqui llamamos a la funcion para obtener los usuarios del local storage
     let name=document.getElementById("name").value
@@ -85,13 +86,16 @@ export function signUp(){
         timer: 4000, // Tiempo en milisegundos (3 segundos)
         showConfirmButton: false, // Oculta el botón de confirmación
         });
+        
 
     
     
     
 }
-if(!bnt==null){
+if(btn){
     bnt.addEventListener('click',()=>signUp())
 }
+    
+
 
 
