@@ -81,7 +81,6 @@ bntLogOut.addEventListener('click',()=>{
     let users=getUsers()
     let description=document.getElementById("descriptionIngreso").value
     let value=document.getElementById("valueIngreso").value
-
     let type='ingreso'
     if (!value || isNaN(value) || Number(value) <= 0) {
         Swal.fire({
@@ -130,6 +129,7 @@ export  function amount(){
     let users=getUsers()
     let user=getUser()
     let value=document.getElementById("amount").value
+    console.log(value)
     if (!value || isNaN(value) || Number(value) <= 0) {
         Swal.fire({
             title: "¡Oh, Oh!",
