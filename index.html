@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Finanzas</title>
   <link rel="stylesheet" href="css/index.css">
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
-  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 
 <body>
@@ -17,7 +17,7 @@
       <div class="logo">FinanzAPP</div>
       <nav id="nav">
 
-        
+
       </nav>
     </header>
 
@@ -30,26 +30,26 @@
     </section>
   </section>
 
-<section id="invitaciones" class="section invitaciones">
-  <h2>¿Listo para Tomar el Control de tus Finanzas?</h2>
-  <div class="tarjetas">
-    <div class="tarjeta">
-      <div class="icono"><i class="fas fa-wallet"></i></div>
-      <h3>Administración Financiera</h3>
-      <p>Aprende a gestionar tu dinero de manera eficiente.</p>
+  <section id="invitaciones" class="section invitaciones">
+    <h2>¿Listo para Tomar el Control de tus Finanzas?</h2>
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <div class="icono"><i class="fas fa-wallet"></i></div>
+        <h3>Administración Financiera</h3>
+        <p>Aprende a gestionar tu dinero de manera eficiente.</p>
+      </div>
+      <div class="tarjeta">
+        <div class="icono"><i class="fas fa-chart-line"></i></div>
+        <h3>Inversiones Inteligentes</h3>
+        <p>Descubre cómo hacer crecer tu patrimonio.</p>
+      </div>
+      <div class="tarjeta">
+        <div class="icono"><i class="fas fa-piggy-bank"></i></div>
+        <h3>Ahorro Efectivo</h3>
+        <p>Establece metas y cumple tus objetivos financieros.</p>
+      </div>
     </div>
-    <div class="tarjeta">
-      <div class="icono"><i class="fas fa-chart-line"></i></div>
-      <h3>Inversiones Inteligentes</h3>
-      <p>Descubre cómo hacer crecer tu patrimonio.</p>
-    </div>
-    <div class="tarjeta">
-      <div class="icono"><i class="fas fa-piggy-bank"></i></div>
-      <h3>Ahorro Efectivo</h3>
-      <p>Establece metas y cumple tus objetivos financieros.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
   <section id="registro" class="section registro">
     <div class="registro-contenido">
@@ -65,7 +65,7 @@
         </form>
       </div>
       <!-- Imagen -->
-      <div class="imagen-registro"> 
+      <div class="imagen-registro">
         <img src="/img/man.png" alt="Persona gestionando finanzas">
       </div>
     </div>
@@ -106,5 +106,19 @@
   </footer>
   <script type="module" src="./js/signUp.js"></script>
 </body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const sectionId = localStorage.getItem('scrollToSection');
+    if (sectionId) {
+      const targetSection = document.getElementById(sectionId);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      localStorage.removeItem('scrollToSection');
+    }
+  });
+
+</script>
 
 </html>
