@@ -80,7 +80,7 @@ header .logo {
 /* Imagen y Introducción */
 .imagen-introduccion {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 40px auto;
   max-width: 1200px;
@@ -112,11 +112,14 @@ header .logo {
   background-color: #f4f4f4;
   padding: 20px;
   border-radius: 8px;
-  text-align: center;
   font-size: 1.1rem;
   line-height: 1.6;
   margin: 20px auto;
   max-width: 800px;
+}
+
+.explicacion h2{
+  color: #2575fc;
 }
 
 /* Imágenes Representativas */
@@ -131,8 +134,7 @@ header .logo {
 
 .imagen-representativa {
   width: 45%;
-  height: 200px;
-  background-color: #e0e0e0;
+  height: 280px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -145,8 +147,7 @@ header .logo {
 .video-placeholder {
   width: 100%;
   max-width: 800px;
-  height: 300px;
-  background-color: #e0e0e0;
+  height: 350px;
   margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -194,9 +195,16 @@ header .logo {
   color: #666;
 }
 
+.consejos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 /* Footer */
 footer {
-  background-color: #6a11cb;
+  background-color: #2575fc;
   color: white;
   text-align: center;
   padding: 15px 0;
