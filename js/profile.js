@@ -26,19 +26,24 @@ bntLogOut.addEventListener('click',()=>{
     let amount=document.getElementById("amountText")
     let image=document.getElementById("image")
     let total=0
-
+    let totalAmount=parseFloat(user.amount)
+    if(totalMovements ==undefined){
+        totalMovements=0
+    }
     if(totalMovements<0){
-        total=parseFloat(user.amount)+totalMovements
+        total=totalAmount+totalMovements
 
     }else{
-        total=user.amount-totalMovements
+        total=totalAmount-totalMovements
 
     }
+    
+    
 
     name.innerHTML="Nombre: "+user.name;
     image.innerHTML=user.name.toUpperCase().charAt(0)
     email.innerHTML="E-mail: "+user.email;
-    amount.innerHTML="Monto Actual: $"+total
+    amount.innerHTML=`Monto Actual: $${total}`
  }
  window.onload=loadUser()
 
@@ -47,7 +52,7 @@ bntLogOut.addEventListener('click',()=>{
     let description=document.getElementById("descriptionEgreso").value
     let value=document.getElementById("valueEgreso").value
     let type='egreso'
-    if (!value || isNaN(value) || Number(value) <= 0) {
+    if (!value || isNaN(value) || Number(value) < 0) {
         Swal.fire({
             title: "¡Oh, Oh!",
             text: "¡Por favor, ingresa un valor válido en el campo.!",
@@ -92,7 +97,7 @@ bntLogOut.addEventListener('click',()=>{
     let description=document.getElementById("descriptionIngreso").value
     let value=document.getElementById("valueIngreso").value
     let type='ingreso'
-    if (!value || isNaN(value) || Number(value) <= 0) {
+    if (!value || isNaN(value) || Number(value) < 0) {
         Swal.fire({
             title: "¡Oh, Oh!",
             text: "¡Por favor, ingresa un valor válido en el campo.!",
@@ -140,7 +145,7 @@ export  function amount(){
     let user=getUser()
     let value=document.getElementById("amount").value
     console.log(value)
-    if (!value || isNaN(value) || Number(value) <= 0) {
+    if (!value || isNaN(value) || Number(value) < 0) {
         Swal.fire({
             title: "¡Oh, Oh!",
             text: "¡Por favor, ingresa un valor válido en el campo.!",
@@ -186,7 +191,7 @@ export  function investments(){
     let user=getUser()
     let value=document.getElementById("investment").value
     console.log(value)
-    if (!value || isNaN(value) || Number(value) <= 0) {
+    if (!value || isNaN(value) || Number(value) < 0) {
         Swal.fire({
             title: "¡Oh, Oh!",
             text: "¡Por favor, ingresa un valor válido en el campo.!",
@@ -214,7 +219,7 @@ export  function savings(){
     let users=getUsers()
     let user=getUser()
     let value=document.getElementById("saving").value
-    if (!value || isNaN(value) || Number(value) <= 0) {
+    if (!value || isNaN(value) || Number(value) < 0) {
         Swal.fire({
             title: "¡Oh, Oh!",
             text: "¡Por favor, ingresa un valor válido en el campo.!",
