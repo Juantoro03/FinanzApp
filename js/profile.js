@@ -19,17 +19,26 @@ bntLogOut.addEventListener('click',()=>{
     setTimeout(()=>{window.location.href = "/index.html";},5000)
 })
 
- function loadUser(){
+ function loadUser(totalMovements){
     let user=getUser()
     let name=document.getElementById("name")
     let email=document.getElementById("email")
-    let amount=document.getElementById("amount")
+    let amount=document.getElementById("amountText")
     let image=document.getElementById("image")
+    let total=0
+
+    if(totalMovements<0){
+        total=parseFloat(user.amount)+totalMovements
+
+    }else{
+        total=user.amount-totalMovements
+
+    }
 
     name.innerHTML="Nombre: "+user.name;
     image.innerHTML=user.name.toUpperCase().charAt(0)
     email.innerHTML="E-mail: "+user.email;
-    amount.innerHTML="Monto Actual: "+user.amount;
+    amount.innerHTML="Monto Actual: $"+total
  }
  window.onload=loadUser()
 
@@ -72,6 +81,7 @@ bntLogOut.addEventListener('click',()=>{
         confirmButtonText: "ok",
     });
     loadTable()
+    loadUser()
 
   }
   let btnEgreso=document.getElementById("btnEgreso")
@@ -112,7 +122,7 @@ bntLogOut.addEventListener('click',()=>{
     Swal.fire({
         title: "Información",
         text: "¡Ingreso Creado!",
-        icon: "succes",
+        icon: "success",
         confirmButtonText: "ok",
     });
     loadTable()
@@ -145,6 +155,7 @@ export  function amount(){
     users[index]=user //modificamos el array users con el nuevo usuario en el indice indicado
     saveUsers(users)
     loadCategories()
+    loadUser()
 }
 let btnAmount=document.getElementById("btnAmount")
 btnAmount.addEventListener('click',()=>{amount()})
@@ -269,8 +280,10 @@ function loadTable(){
     })
     table.innerHTML=content
     total=ingreso-egreso
-    console.log(typeof egreso)
+    
     result.innerHTML=total
+    loadUser(total)
+    
 }
 window.onload=loadTable()
 
