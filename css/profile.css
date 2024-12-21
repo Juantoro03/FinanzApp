@@ -1,11 +1,11 @@
 /* General Styles */
-*{
-  box-sizing:border-box ;
+* {
+  box-sizing: border-box;
 }
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f9;
   color: #333;
 }
 
@@ -21,13 +21,12 @@ header {
   padding: 15px 30px;
   background-color: transparent;
   z-index: 1000;
-  background-color: #6a11cb;
 }
 
 header .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #000000;
 }
 
 nav a {
@@ -39,30 +38,26 @@ nav a {
   border-radius: 20px; 
   transition: all 0.3s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  background-color: #6a11cb;
+  background-color: #000000;
 }
 
 nav a:hover {
-  background-color: #ffffff;
-  color: #6a11cb;
+  background-color: #2575fc;
+  color: #fff;
 }
 header .logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-/* Main Sections */
 main {
-  margin-top: 80px;
+  margin: 80px auto;
   padding: 20px;
 }
 
 h1, h2 {
   text-align: center;
-  color: #6a11cb;
-}
-span{
-  color: #333;
+  color: #000000;
 }
 
 .usuario {
@@ -71,8 +66,8 @@ span{
   background-color: #fff;
   margin: 20px auto;
   max-width: 1200px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px #6b11cb2c;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .usuario-info {
@@ -81,218 +76,147 @@ span{
   align-items: center;
   gap: 20px;
   margin-top: 20px;
+  text-align: start;
 }
 
 .imagen-usuario {
   width: 150px;
   height: 150px;
-  background-color: #eee067;
+  background-color: #eef2f7;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #6a11cb;
+  color: #2575fc;
   font-size: 60px;
+  font-weight: bold;
 }
 
 .datos-usuario p {
   margin: 5px 0;
   font-size: 1rem;
-  font-size: 20px;
-   color: #555;
+  color: #555;
 }
 
 .invitacion, .invitacion-grande {
-  margin-top: 20px;
+  margin: 20px 25%;
   padding: 20px;
-  background-color: #e7e5e5;
+  background-color: #f6f6f6;
   border-radius: 8px;
   font-size: 1rem;
   color: #555;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 /* Categorías */
 .categorias {
   margin: 40px auto;
   max-width: 1200px;
-  text-align: center;
 }
-.container{
-  width: 100%;
+
+.container {
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
-
+  gap: 20px;
+  justify-content: center;
 }
-/* Contenedor principal */
+
 .categoria-item {
-  width: 320px; /* Ancho del contenedor */
-  padding: 20px; /* Espaciado interno */
-  border-radius: 15px; /* Bordes redondeados */
-  box-shadow: 0 4px 10px rgba(108, 9, 221, 0.329); /* Sombra para profundidad */
-  background-color: #ffffff; /* Fondo blanco */
-  text-align: center; /* Centrar el contenido */
-  font-family: Arial, sans-serif; /* Fuente general */
-  margin: 20px auto; /* Centrar el contenedor */
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  margin: 20px;
 }
 
-/* Título principal */
 .categoria-item h1 {
-  font-size: 26px;
-  color: #5e1f9c; /* Morado */
+  font-size: 24px;
+  color: #2575fc;
+  margin-bottom: 10px;
+}
+
+.categoria-item p {
+  font-size: 1rem;
+  color: #555;
   margin-bottom: 15px;
 }
 
-/* Subtítulo (monto) */
 .categoria-item h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  color: #333; /* Gris oscuro */
+  color: #333;
   margin-bottom: 20px;
 }
-.categoria-item p{
-  font-family: Arial, sans-serif;
-  color: #555;
-}
-/* Contenedor del input */
-.categoria {
-  margin-bottom: 20px; /* Espacio inferior */
+
+.categoria input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
-/* Input de texto */
-.categoria input{
-  margin-bottom: 15px;
-  width: 80%; /* Ancho proporcional */
-  padding: 10px; /* Espaciado interno */
-  border: 2px solid #ddd; /* Borde del input */
-  border-radius: 8px; /* Bordes redondeados */
-  font-size: 16px; /* Tamaño del texto */
-  outline: none; /* Eliminar el borde azul al hacer foco */
-  transition: border 0.3s; /* Animación suave en el borde */
-  
+.categoria input:focus {
+  border-color: #2575fc;
+  outline: none;
 }
 
-.categoria input[type="text"]:focus {
-  border: 2px solid #5e1f9c; /* Cambiar color del borde al hacer foco */
-}
-.categoria input[type="number"]::-webkit-inner-spin-button,
-.categoria input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none; /* Ocultar controles adicionales */
-    margin: 0; /* Eliminar márgenes internos */
-}
-
-/* Botón */
 .categoria-item button {
-  background-color: #5e1f9c; /* Fondo morado */
-  color: #ffffff; /* Texto blanco */
-  padding: 12px 20px; /* Espaciado interno */
-  font-size: 16px; /* Tamaño del texto */
-  border: none; /* Sin borde */
-  border-radius: 8px; /* Bordes redondeados */
-  cursor: pointer; /* Cambiar cursor al pasar por encima */
-  transition: background-color 0.3s; /* Animación suave */
+  background-color: #2575fc;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .categoria-item button:hover {
-  background-color: #7a38c7; /* Fondo más claro al pasar el cursor */
+  background-color: #0058cc;
 }
-
-
 
 /* Resumen */
 .resumen {
   margin: 40px auto;
   max-width: 1200px;
-  text-align: center;
 }
 
-.resumen-item {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px;
-  margin: 10px auto;
+.finanzas-tabla {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.bloque {
-  font-size: 1.2rem;
-  color: #6a11cb;
-}
-
-        /* Estilo de la tabla */
-.finanzas-tabla {
-  width: 80%;
-  margin: 0 auto;
-  border-collapse: collapse;
-  background-color: #ffffff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.096);
-  border-radius: 10px;
-  max-height: 120px;
-  padding: 10px;
-  overflow: auto;
-
-
-  
-}
-
-/* Estilo de los encabezados */
-
 .finanzas-tabla th {
-  background-color: #5e1f9c;
-  color: #ffffff;
-  font-size: 18px;
+  background-color: #2575fc;
+  color: #fff;
+  font-size: 16px;
   text-align: center;
   padding: 15px;
-  width: 25%;
 }
 
-/* Estilo de las filas */
 .finanzas-tabla td {
-  padding: 15px;
-  font-size: 16px;
-  color: #333333;
-  border-bottom: 1px solid #e0e0e0;
-  width: 20%;
-}
-.delete{
-  width: 25px;
-  align-content: center;
- height: 25px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.6s;
-  border-radius: 20%;
-  border: 1px solid red;
-  color: red;
-}
-.delete:hover{
-  background-color: red;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
 }
 
-
-
-
-
-/* Última fila sin borde */
-.finanzas-tabla tr:last-child td {
-  border-bottom: none;
-  
-}
-
-/* Alternar colores para filas */
 .finanzas-tabla tr:nth-child(even) {
-  background-color: #cecece;
+  background-color: #f9f9f9;
 }
 
-/* Footer */
 footer {
-  background-color: #6a11cb;
+  background-color: #2575fc;
   color: #fff;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
 }

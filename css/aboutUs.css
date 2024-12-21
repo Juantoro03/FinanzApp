@@ -38,14 +38,13 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #000000;
+  background-color: #2575fc;
   color: #fff;
 }
 header .logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
-
 
 /* Main Sections */
 main {
