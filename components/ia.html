@@ -7,21 +7,23 @@
   <link rel="stylesheet" href="/css/ia.css">
 </head>
 <body>
+  <a href="/index.html">Regresar</a>
   <div class="chat-container">
-    <a href="/index.html">Regresar</a>
+    
 
     <div class="chat-header">
       <h2>Chat Financiero</h2>
     </div>
-    <div class="chat-body">
-      <div class="message user">Hola, ¿cómo puedo ahorrar más?</div>
+    <div class="chat-body" id="chatBody">
+      <!-- <div class="message user">Hola, ¿cómo puedo ahorrar más?</div>
       <div class="message ia">Te recomiendo registrar tus ingresos y gastos en FinanzAPP.</div>
-      <div class="message user">Gracias, lo haré.</div>
+      <div class="message user">Gracias, lo haré.</div> -->
     </div>
     <div class="chat-footer">
-      <input type="text" placeholder="Escribe tu mensaje..." class="chat-input">
-      <button class="send-button">Enviar</button>
+      <input type="text" placeholder="Escribe tu mensaje..." class="chat-input" id="inputChat">
+      <button class="send-button" type="button" id="btnChat">Enviar</button>
     </div>
   </div>
+  <script type="module" src="../js/ia.js"></script>
 </body>
 </html>

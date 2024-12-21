@@ -12,9 +12,10 @@ function logOut(){
       });
     setTimeout(()=>{window.location.href = "/index.html"},4000)
 
-}
-let bntLogOut=document.getElementById("logOut")
-bntLogOut.addEventListener('click',()=>{
+    }
+    localStorage.removeItem(getToken())
+    let bntLogOut=document.getElementById("logOut")
+    bntLogOut.addEventListener('click',()=>{
     logOut()
     setTimeout(()=>{window.location.href = "/index.html";},5000)
 })

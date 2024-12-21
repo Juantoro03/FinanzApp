@@ -6,7 +6,7 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
+    background-color: #a7a7a7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,6 +44,16 @@
     padding: 10px 15px;
     border-radius: 8px;
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+ 
+  }
+  .message span{
+    font-size: 10px;
+    color: #b1b1b1;
+    padding-bottom: -25px;
+    z-index: 5;
+
   }
   
   .message.user {
@@ -96,7 +106,9 @@
 
 
   a{
-    margin: 10px 0 10px 10px;
+    top: 0%;
+    left: 0%;
+    margin: 40px;
     text-decoration: none;
     background-color: #2575fc;
     color: white;
@@ -106,6 +118,8 @@
     padding: 10px 30px;
     border-radius: 40px;
     transition: background-color 0.3s;
+    position: absolute;
+  
 
   }
 
